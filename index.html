@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>VCF Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Generator Admin/Navy</h1>
+
+    <div class="top-fields">
+      <input type="text" id="globalName" placeholder="Nama Admin/Navy">
+      <select id="roleSelect">
+        <option value="admin">Admin</option>
+        <option value="navy">Navy</option>
+      </select>
+      <select id="orderSelect">
+        <option value="top">Dari Atas</option>
+        <option value="bottom">Dari Bawah</option>
+      </select>
+      <input type="number" id="startCount" placeholder="Jumlah Awal (1–20)" min="1" max="20">
+      <button id="fillNames">Isi Otomatis Nama File</button>
+      <button id="clearNames">Hapus Semua Nama File</button>
+      <button id="clearNumbers">Hapus Semua Isi Box</button>
+    </div>
+
+    <div id="columnsContainer" class="columns"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
